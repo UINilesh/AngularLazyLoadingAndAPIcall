@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>Api Page</p>
+
+      <div class="table-responsive">
+        <table class="table table-fixed">
+          <thead>
+            <tr>
+              <th scope="col" class="col-4">Id</th>
+              <th scope="col" class="col-4">Title</th>
+              <th scope="col" class="col-4">Completed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let todoalias of tododata">
+              <td class="col-4">{{ todoalias.id }}</td>
+              <td class="col-4">{{ todoalias.title }}</td>
+              <td class="col-4">{{ todoalias.completed }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End -->
+    </div>
+
+    <p style="color: #000; font-weight: bold;">
+      Total ToDo List = {{ filteredLength }}
+    </p>
+  </div>
+</div>
